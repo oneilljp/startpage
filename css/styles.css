@@ -48,6 +48,7 @@ body {
   border-radius: 15px;
   background-color: var(--bg);
   position: absolute;
+  box-shadow: 10px 10px 10px;
 }
 
 .weather {
@@ -56,6 +57,7 @@ body {
   padding: 25px;
   border-radius: 15px;
   background-color: var(--bg);
+  box-shadow: 10px 10px 10px;
 }
 
 .subweather {
@@ -93,6 +95,7 @@ body {
   background-color: var(--bg2);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 10px 10px 10px;
 }
 
 .sicon {
@@ -120,6 +123,7 @@ body {
   background-color: var(--bg2);
   border-radius: 15px;
   margin: 10px;
+  box-shadow: 10px 10px 10px;
 }
 
 .item {
@@ -165,6 +169,7 @@ body {
   background-color: var(--bg);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 10px 10px 10px;
 }
 
 .cicon {
