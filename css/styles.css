@@ -1,0 +1,183 @@
+:root {
+  /*Colors*/
+  --bg: #3c3836c3;
+  --bg2: #504945c3;
+  --fg: #ebdbb2;
+  --fg2: #fbf1c7;
+  --c1: #cc241d;
+  --c2: #458588;
+  --c3: #98971a;
+  --c4: #b16286;
+  --c5: #d79921;
+
+  --font-main: Iosevka;
+  --fsize1: 50px; /* GREETING */
+  --fsize2: 90px; /* TEMP */
+  --fsize3: 30px; /* LINKS */
+  --fsize4: 40px; /* SEARCH */
+  --fsize5: 120px; /* CLOCK */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--fg2);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--fg2);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--fg2);
+}
+
+body {
+  background-image: url("../background.jpg");
+  background-size: cover;
+}
+
+.topbar {
+  display: flex;
+}
+
+.greeter {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: var(--bg);
+  position: absolute;
+}
+
+.weather {
+  margin-left: auto;
+  margin-right: 0;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: var(--bg);
+}
+
+.subweather {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.temp {
+  font-family: var(--font-main);
+  font-size: var(--fsize2);
+  color: var(--fg);
+}
+
+.message {
+  font-family: var(--font-main);
+  font-size: var(--fsize1);
+  color: var(--fg);
+}
+
+.name {
+  font-family: var(--font-main);
+  font-size: var(--fsize1);
+  color: var(--c1);
+}
+
+.search {
+  margin: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  background-color: var(--bg2);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.sicon {
+  width: var(--fsize4);
+  height: var(--fsize4);
+  stroke: var(--c3);
+}
+
+.searcher {
+  background-color: inherit;
+  color: var(--fg2);
+  font-family: var(--font-main);
+  font-size: var(--fsize4);
+  border: none;
+  outline: none;
+}
+
+.navigation {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.cols {
+  background-color: var(--bg2);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.item {
+  margin: 20px;
+}
+
+.linkbox {
+  border-radius: 15px;
+  margin: 10px;
+  transition: background-color 0.25s linear;
+}
+
+.linkbox:hover {
+  background-color: var(--bg);
+}
+
+.links {
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 1s;
+}
+
+.title {
+  font-family: var(--font-main);
+  font-size: var(--fsize1);
+  color: var(--fg2);
+}
+
+.indic {
+  stroke: var(--c4);
+  width: var(--fsize1);
+  height: var(--fsize1);
+}
+
+.clockblock {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  background-color: var(--bg);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.cicon {
+  width: var(--fsize5);
+  height: var(--fsize5);
+  stroke: var(--c5);
+}
+
+.hour,
+.colon,
+.minute,
+.ampm {
+  font-family: var(--font-main);
+  font-size: var(--fsize5);
+  color: var(--fg2);
+}

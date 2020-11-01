@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title></title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <body>
+
+    <!-- example icon -->
+    <!-- <i data-feather="circle"></i> -->
+    <div class="topbar">
+      <div class="greeter">
+        <div>
+          <span class="message" id="greeting"></span>
+          <span class="name">JP</span>
+          <span class="message" id="punc">!</span>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <button class="weather" style="border:none; outline:none;">
+        <!-- <span class="symbol">Cold</span> -->
+        <span class="message" id="location">Ann Arbor, MI: </span>
+        <div class="subweather">
+          <div class="wIcon">
+            <img src="icons/unknown.png"/>
+          </div>
+          <!-- <i data-feather="wind" class="indic"></i> -->
+          <span class="temp">95&#176;</span>
+        </div>
+      </button>
+    </div>
+    <div class="search">
+      <div class="searchbar">
+        <form action="https://www.duckduckgo.com/" method="get">
+          <i data-feather="search" class="sicon"></i>
+          <input type="text" class="searcher" name="q" placeholder="Duck Search" autocomplete="off">
+        </form>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="cols" id="org">
+        <div class="linkbox">
+          <a class="links" href="https://www.gmail.com/" target="_blank">
+            <div class="item">
+              <i data-feather="mail" class="indic"></i>
+              <span class="title">Mail</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://mail.google.com/a/umich.edu" target="_blank">
+            <div class="item">
+              <i data-feather="mail" class="indic"></i>
+              <span class="title">UmichMail</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://calendar.google.com/u/1/" target="_blank">
+            <div class="item">
+              <i data-feather="calendar" class="indic"></i>
+              <span class="title">Calendar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="cols" id="social">
+        <div class="linkbox">
+          <a class="links" href="https://www.twitter.com/" target="_blank">
+            <div class="item">
+              <i data-feather="twitter" class="indic"></i>
+              <span class="title">Twitter</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://www.instagram.com" target="_blank">
+            <div class="item">
+              <i data-feather="instagram" class="indic"></i>
+              <span class="title">Instagram</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://www.reddit.com/" target="_blank">
+            <div class="item">
+              <i data-feather="rss" class="indic"></i>
+              <span class="title">Reddit</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="cols" id="fun">
+        <div class="linkbox">
+          <a class="links" href="https://www.twitch.tv/" target="_blank">
+            <div class="item">
+              <i data-feather="twitch" class="indic"></i>
+              <span class="title">Twitch</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://www.youtube.com/" target="_blank">
+            <div class="item">
+              <i data-feather="youtube" class="indic"></i>
+              <span class="title">Youtube</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://www.github.com/oneilljp" target="_blank">
+            <div class="item">
+              <i data-feather="github" class="indic"></i>
+              <span class="title">Github</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="cols" id="school">
+        <div class="linkbox">
+          <a class="links" href="https://canvas.umich.edu" target="_blank">
+            <div class="item">
+              <i data-feather="edit" class="indic"></i>
+              <span class="title">Canvas</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://gradecraft.com" target="_blank">
+            <div class="item">
+              <i data-feather="folder" class="indic"></i>
+              <span class="title">GradeCraft</span>
+            </div>
+          </a>
+        </div>
+        <div class="linkbox">
+          <a class="links" href="https://gradescope.com" target="_blank">
+            <div class="item">
+              <i data-feather="check-square" class="indic"></i>
+              <span class="title">Gradescope</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clockblock">
+      <div class="clock">
+        <i data-feather="clock" class="cicon"></i>
+        <span class="hour">4</span>
+        <span class="colon">:</span>
+        <span class="minute">20</span>
+        <span class="ampm">pm</span>
+      </div>
+    </div>
+
+    <script>
+      feather.replace()
+    </script>
+    <script src="js/greeting.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>
